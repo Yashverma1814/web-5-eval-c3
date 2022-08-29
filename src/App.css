@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+.navbar{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.products-div{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);  
+}
+.product-div{
+  border: 1px solid gainsboro;
+  margin: 5rem;
+  border-radius: 16px;
+  padding: 1rem;
+}

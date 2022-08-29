@@ -61,6 +61,11 @@
       "productId": 3,
       "count": 1,
       "id": 3
+    },
+    {
+      "productId": 2,
+      "count": 1,
+      "id": 4
     }
   ]
 }

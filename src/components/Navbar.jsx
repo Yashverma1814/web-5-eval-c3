@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
+import { Link } from "react-router-dom";
 
 // use react-router Link or NavLink
-const Link = <a />;
 
 const Navbar = () => {
+
+
   return (
-    <div data-cy="navbar">
-      <Link data-cy="navbar-home-link"></Link>
+    <div data-cy="navbar" className="navbar">
+      <Link data-cy="navbar-home-link" to={'/'}>LOGO</Link>
       <span data-cy="navbar-cart-items-count">{/* count here */}</span>
-      <button data-cy="navbar-login-logout-button"></button>
+      <button data-cy="navbar-login-logout-button">LogIn/LogOut</button>
     </div>
   );
 };
