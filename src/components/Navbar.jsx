@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
-
+  const {token,handleLogout} = useContext(AuthContext)
   return (
     <div data-cy="navbar" className="navbar">
       <Link data-cy="navbar-home-link" to={'/'}>LOGO</Link>
       <span data-cy="navbar-cart-items-count">{/* count here */}</span>
-      <button data-cy="navbar-login-logout-button">LogIn/LogOut</button>
+      <button data-cy="navbar-login-logout-button" onClick={()=>handleLogout()}>{token===''?"Login":"Logout"}</button>
     </div>
   );
 };
